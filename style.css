@@ -1,0 +1,714 @@
+/* Base styles */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    background-image: radial-gradient(circle, rgba(181, 177, 177, 0.703) 1px, transparent 1px), radial-gradient(circle, rgba(45, 192, 240, 0.877) 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px
+    
+}
+
+*h1{
+    color:royalblue;
+}
+
+.nav-logo {
+    margin-right: auto; /* Pushes the logo to the right */
+    display: flex;
+    align-items: center; /* Centers the logo vertically */
+}
+
+.logo-image { 
+    height: 70px; 
+    width: auto; 
+    margin-right: 10px; 
+}
+
+
+/* Navbar styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    color: #fff;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-right: 600px; 
+    display:inline-flex;
+ }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative; /* Needed for the pseudo-element */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #fff;
+    transition: width 0.3s ease;
+    bottom: -2px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* home section styles */
+section {
+    padding: 50px;
+    background-color: rgba(235, 235, 235, 0.8); /* Semi-transparent white background for sections */
+    
+}
+
+.intro-container {
+    text-align: center;
+}
+
+.intro-container p{
+    font-size: large;
+    font-weight: 400;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 20px;
+}
+
+
+
+h1 {
+    font-size: 48px; 
+    font-weight:bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color:royalblue;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 8px rgba(153, 49, 201, 0.763);
+    text-align: center;
+}
+
+.card img {
+    width: 90px;
+    height: 50px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Setup section styles */
+#setup ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section {
+    padding: 50px;
+    background-color: transparent; /* Fully transparent background */
+    
+}
+
+
+
+
+
+#setup pre {
+    
+    border-left: 4px solid #004080;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#setup a {
+    color: #000000;
+    text-decoration: underline;
+
+}
+
+
+#setup p{
+    font-size: 37px; 
+    font-weight:normal; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+#setup li{
+    font-size: 20px; 
+    font-weight:normal; 
+    
+    margin-bottom: 20px;
+}
+
+#setup pre code{
+    font-size: 20px; 
+    font-weight:normal; 
+    
+    margin-bottom: 20px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+   
+    font-size: 16px;
+    
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    position: relative; /* Needed to use bottom */
+    bottom: 7px;
+}
+
+a.button:hover {
+    box-shadow: 0 4px 8px rgba(4, 153, 216, 0.9);
+    transform: translateY(-3px);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/*cheat section styles */
+.cheat-container {
+    text-align: center;
+    padding: 50px;
+    
+  
+}
+
+.cheat-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color:royalblue;
+}
+
+.cheatsheet-container p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cheat-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cheat-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 8px rgba(153, 49, 201, 0.763); /* Shadow for cards */
+    text-align: left;
+}
+
+.cheat-card h2 {
+    font-size: 24px;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.cheat-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cheat-card li {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* practice section styles */
+
+#practice {
+    padding: 50px;
+    
+    text-align: center;
+}
+
+.practice-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color:royalblue;
+    margin-bottom: 20px;
+}
+
+.practice-container p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.dataset-card {
+    background-color: #fff;
+   
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 8px rgba(153, 49, 201, 0.763); /* Shadow for cards */
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.dataset-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.dataset-card img:hover {
+    transform: scale(1.1); /* Zooms the image in on hover */
+}
+
+
+.dataset-card h2 {
+    font-size: 24px;
+    color: #004080;
+    
+}
+
+.dataset-card p {
+    font-size: 16px;
+    color: #000000;
+    
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+  
+    background-color: #004080;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative; /* Needed to use bottom */
+    bottom: 0;
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Lifts the button slightly up */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* Get Certified section styles */
+#certified {
+    padding: 50px;
+    
+    
+    text-align: center;
+}
+
+.certified-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color:royalblue;
+    margin-bottom: 20px;
+}
+
+.certified-container p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.cert-source {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 8px rgba(153, 49, 201, 0.763); /* Shadow for cards */
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.cert-source h2 {
+    font-size: 24px;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.cert-source p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+   
+    background-color: #004080;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative; /* Needed to use bottom */
+    bottom: 0;
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Lifts the button slightly up */
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* Footer styles for light mode */
+footer {
+    background-color:rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container ul,
+.footer-container a {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #fdfeff;
+}
+
+/* Footer styles for dark mode */
+body.dark-mode footer {
+    background-color:black;
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer-container p,
+body.dark-mode .footer-container ul,
+body.dark-mode .footer-container a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer-social a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer-social a:hover {
+    color: #c0c0c0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social .social-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove default underline */
+    color: #ffffff; /* Ensure the text color matches your design */
+    transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container > div {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Dark and Light Mode Toggle Styles */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:aqua;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ffffff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #000000;
+}
+
+body.dark-mode .card,
+body.dark-mode .cheat-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(250, 249, 249, 0.8);
+}
+
+body.dark-mode .card,
+body.dark-mode .dataset-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(250, 249, 249, 0.8);
+}
+
+body.dark-mode .navbar .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .button {
+    background-color: #555;
+    color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+}
+
+body.dark-mode #setup a {
+    color: #ffffff;
+}
+
+
+body.dark-mode .intro-container p {
+    color: #ffffff;
+}
+
+
+
+body.dark-mode .cheat-card h2 {
+    color: #ffffff; 
+}
+
+body.dark-mode .cheat-card li {
+    color: #ffffff; 
+}
+
+body.dark-mode .dataset-card h2 {
+    color: #ffffff; 
+}
+
+body.dark-mode .dataset-card li {
+    color: #ffffff; 
+}
+
+body.dark-mode .dataset-card p {
+    color: #ffffff; 
+}
+
+/* Get Certified section styles for dark mode */
+
+body.dark-mode .certified-container h1 {
+    color: royalblue;
+}
+
+body.dark-mode .cert-source {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .cert-source h2 {
+    color: #c0c0c0; /* Lighter color for dark mode */
+}
+
+body.dark-mode .cert-source p {
+    color: #e0e0e0; /* Lighter color for dark mode */
+}
+
+body.dark-mode .button {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+
+body.dark-mode .cert-source {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(250, 249, 249, 0.8);
+}
+
