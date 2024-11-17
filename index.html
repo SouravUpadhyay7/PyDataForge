@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyDataForge</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="data visualization logo with Python (1).png" alt="Logo" class="logo-image">
+        </div>
+        <div class="logo">PyDataForge</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#setup">SetUp</a></li>
+            <li><a href="#cheatsheet">CheatSheet</a></li>
+            <li><a href="#practice">Practice</a></li>
+            <li><a href="#certified">GetCertified</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+    </nav>
+    
+
+
+       
+
+    <section id="home">
+        <div class="intro-container">
+            <h1>Welcome to PyDataForge 🤖 </h1>
+            <p>A fusion of Python data libraries</p>
+            <p>Your go-to resource for learning <b>Pandas</b>, <b>NumPy</b>, and <b>Matplotlib</b>.</p>
+            <div class="intro-text">
+                <div class="card">
+                    <img src="Pandas_logo.svg-removebg-preview.png" alt="Pandas Logo">
+                    <h2>Pandas</h2>
+                    <p>import pandas as pd</p>
+                    <p>Pandas is a powerful data analysis tool used to manipulate and analyze data. It's perfect for data cleaning, transforming, and analysis.</p>
+                    
+                    <a href="pandas.html" class="button">Get Started</a>
+                </div>
+                <div class="card">
+                    <img src="images.png" alt="NumPy Logo">
+                    <h2>NumPy</h2>
+                    <p>import numpy as np</p>
+                    <p>NumPy is the fundamental package for numerical computing in Python. It provides support for arrays, matrices, and mathematical functions.</p>
+                    <a href="numpy.html" class="button">Get Started</a>
+                </div>
+                <div class="card">
+                    <img src="matplotib.jpg" alt="Matplotlib Logo">
+                    <h2>Matplotlib</h2>
+                    <p>import matplotlib.pyplot as plt</p>
+                    <p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. It's widely used for plotting data.</p>
+                    <a href="matplotlib.html"  class="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="setup">
+            <h1>Setup</h1>
+            <p>Before diving into Pandas, NumPy, and Matplotlib, you need to set up your environment:</p>
+            <ul>
+                <li>Download and install <a href="https://www.anaconda.com/products/distribution" target="_blank">Anaconda</a> - It includes Python and essential packages.</li>
+                <li>Set up a virtual environment using Anaconda or pip.</li>
+                <li>Install Pandas, NumPy, and Matplotlib using the following commands:</li>
+                <pre><code>pip install pandas numpy matplotlib</code></pre>
+            </ul>
+            <p>For detailed setup instructions, <a href="setup.html" target="_blank" class="button">click here</a>.</p>
+
+    </section>
+        
+        <section id="cheatsheet">
+            <div class="cheatsheet-container">
+                <h1>Cheatsheet</h1>
+                <p>Quick reference guides for Pandas, NumPy, and Matplotlib.</p>
+                
+                <div class="cheat-cards">
+                    <div class="cheat-card">
+                        <h2>Pandas Cheatsheet</h2>
+                        <ul>
+                            <li><b>Importing:</b> <code>import pandas as pd</code></li>
+                            <li><b>Read CSV:</b> <code>pd.read_csv('file.csv')</code></li>
+                            <li><b>Create DataFrame:</b> <code>df = pd.DataFrame(data)</code></li>
+                            <li><b>Head:</b> <code>df.head()</code></li>
+                            <li><b>Describe:</b> <code>df.describe()</code></li>
+                        </ul>
+                        <a href="pandas_cheatsheet.html" class="button">Get Started</a>
+                    </div>
+        
+                    <div class="cheat-card">
+                        <h2>NumPy Cheatsheet</h2>
+                        <ul>
+                            <li><b>Importing:</b> <code>import numpy as np</code></li>
+                            <li><b>Create Array:</b> <code>np.array([1, 2, 3])</code></li>
+                            <li><b>Zeros Array:</b> <code>np.zeros((3, 3))</code></li>
+                            <li><b>Ones Array:</b> <code>np.ones((3, 3))</code></li>
+                            <li><b>Arange:</b> <code>np.arange(0, 10, 2)</code></li>
+                        </ul>
+                        <a href="numpy_cheatsheet.html" class="button">Get Started</a>
+                    </div>
+        
+                    <div class="cheat-card">
+                        <h2>Matplotlib Cheatsheet</h2>
+                        <ul>
+                            <li><b>Importing:</b> <code>import matplotlib.pyplot as plt</code></li>
+                            <li><b>Basic Plot:</b> <code>plt.plot(x, y)</code></li>
+                            <li><b>Show Plot:</b> <code>plt.show()</code></li>
+                            <li><b>Title:</b> <code>plt.title('Title')</code></li>
+                            <li><b>X-Label:</b> <code>plt.xlabel('X-axis')</code></li>
+                            <li><b>Y-Label:</b> <code>plt.ylabel('Y-axis')</code></li>
+                        </ul>
+                        <a href="matplotlib_cheatsheet.html" class="button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="practice">
+            <div class="practice-container">
+                <h1>Practice Datasets</h1>
+                <p>Here are some datasets for you to practice your skills with Pandas, NumPy, and Matplotlib.</p>
+                <div class="dataset-card">
+                    <img src="titanic.jpg" alt="Dataset 1">
+                    <h2>Dataset 1: Titanic</h2>
+                    <p>This dataset contains information about the passengers aboard the Titanic. Practice your data analysis skills by exploring survival rates, passenger demographics, and more.</p>
+                    <a href="https://link-to-titanic-dataset" target="_blank" class="button">Download Dataset</a>
+                </div>
+                <div class="dataset-card">
+                    <img src="iris.jpg" alt="Dataset 2">
+                    <h2>Dataset 2: Iris</h2>
+                    <p>This dataset includes measurements of sepal length, sepal width, petal length, and petal width for three species of Iris flowers. Use this dataset for classification practice.</p>
+                    <a href="https://link-to-iris-dataset" target="_blank" class="button">Download Dataset</a>
+                </div>
+                <div class="dataset-card">
+                    <img src="mnist.png" alt="Dataset 3">
+                    <h2>Dataset 3: MNIST</h2>
+                    <p>The MNIST dataset contains images of handwritten digits. Use this dataset to practice your machine learning and image processing skills.</p>
+                    <a href="https://link-to-mnist-dataset" target="_blank" class="button">Download Dataset</a>
+                </div>
+            </div>
+        </section>
+        
+        
+         
+
+    </section>
+    <section id="certified">
+        <section id="certified">
+            <div class="certified-container">
+                <h1>Get Certified</h1>
+                <p>Ready to showcase your skills? Here are some great resources to get you certified in Pandas, NumPy, and Matplotlib.</p>
+                
+                <div class="cert-source">
+                    <h2>FreeCodeCamp</h2>
+                    <p>FreeCodeCamp offers a variety of certifications that cover a wide range of topics including data analysis with Python.</p>
+                    <a href="https://www.freecodecamp.org/learn/data-analysis-with-python/" target="_blank" class="button">Get Started</a>
+                </div>
+        
+                <div class="cert-source">
+                    <h2>Coursera</h2>
+                    <p>Coursera provides comprehensive courses and certifications from top universities and companies in data science and machine learning.</p>
+                    <a href="https://www.coursera.org/specializations/data-science-python" target="_blank" class="button">Get Started</a>
+                </div>
+        
+                <div class="cert-source">
+                    <h2>edX</h2>
+                    <p>edX offers certifications in data science and analytics, taught by leading institutions around the world.</p>
+                    <a href="https://www.edx.org/learn/data-analysis" target="_blank" class="button">Get Started</a>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-location">
+            <h3>Our Location</h3>
+            <p>PyDataForge</p>
+            <p>123 Data Science Avenue</p>
+            <p>Cityname, ST 45678</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: xx@xx.com</p>
+            <p>Phone: xxxxxxxxxx</p>
+            <p>Made with ❤️ by Sourav Upadhyay</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#setup">SetUp</a></li>
+                <li><a href="#cheatsheet">CheatSheet</a></li>
+                <li><a href="#practice">Practice</a></li>
+                <li><a href="#certified">GetCertified</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid" alt="Instagram" class="social-icon"> Instagram</a>
+            <a href="#"><img src="data:image/png;base64,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" alt="Instagram" class="social-icon"> Linkedin</a>
+            <a href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMREhAQEBIWFRAVFhUVFg8SEBYWFhcVFREXFxUSFRYYHCggGiYlGxcVITEhJSsrLjAwFx8zODMtNygtLisBCgoKDg0OGxAQGzImHyUrLTI3NTAwLy0yKy0rLS0rKy0yLS0tLS0yLS0uLy0tLy0tLS0yNS0tLS0tLS0uLTAtLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xABBEAACAQIBCAgDBQYFBQAAAAAAAQIDEQQFBhIhMUFRgQcTImFxkaGxMkJSFCNDcsEzU2KCstEkVJKi8BY0c5PS/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAEFAwQGAgf/xAA4EQEAAQMCAgYKAQMDBQAAAAAAAQIDEQQFITESQVFhgZEGEyIycaGxwdHw4SNCUhWi8RQzQ0Ry/9oADAMBAAIRAxEAPwDFOKfTwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABn4DI2Irq9GjOUfqtaPKTsjYt6W7c400tW/rdPYnFyuIn5+UcWVWzVxkVd4eVv4XGT8otsyToNREZmlho3XR1TiLkfOPrDUTg4txkmpLU4tWafBp7DUmmYnEt+JiYzHJSQkAAAAAAAAAAAAAAAAAAAAAAAAAAABOcyM1I1IrFYiN4v9nSa1NfXJb1wXPgXW36GKo9Zcj4Q5reN2qt1TYszieuftH3nwdBStqWzgXblZnL0IafOHN6li4NSSjVS7NZLtLgnxXd7GrqdLRfpxPPtWGh3G7pKvZ409cfvKe9yPHYSdGpOlUVpwdmvZruas+ZzF23VbrmirnDvLN6i9bi5RylYMbIAAAAAAAAAAAAAAAAAAAAAAAAFNWrGK0pNJLe3ZHuiiquejTGZeLl2i3T0q5iI7+DV1c5cNBpOUpK6voLXa+u2k0ixtbVfqxNWIj4qa/wCkGkozFGap7o4ec4dUzP6T8Dja0MHShUozatTjUUNGWjG+gnCTs7J6nwOh6MUxiHFzXNdUzPOU9AAAOddJ2ESqUKy2yjKEv5GnF+Un5Io93t4mmvwdZ6O3pmiu1PVMT58/ohJTOkAAAAAAAAAAAAAAAAAAAAAAAGuy1leGGheWuT+GH6vuN3R6OrUVdlMc5/etW7luVGjo7ap5R957kHr4mvi5Xk3bcuHgtx01mxRap6NEYhwuq1d3UV9K7OZ+UfCGyweaUpW0rK++b9eJgua/TW5xNWZ7uP8ADbsbRrb1PSijEd/D5c/k6hmP0U/ZMXRxlatCXVNyhTpJ656LScpNLUr31bbI25wrYz1uuqoQ95e9YQKJVSUZQHpJxSbw9PetOb7k7Jez8il3iuPZo8XU+jducXLnVwj7z9kJKN1AAAAAAAAAAAAAAAAAAAAAABbxFZQjKctkU2+R7t25uVxRTzlivXqbNuq5XyiMudVqssXXcpbL6l7JeB2NmzTaoiinlH7l831Oprv3Ju185+XZEJxknJcaUU7dv27kc/r9wquzNFE+z9f4dftGz06amLt2M3J/290d/bPk2JVr5Oc08v6UY0Zv7yKtG/zRWy3el/c6TbtZTcpi3VPtR8/5cVvW2VWbk37cexPPun8T/HYlEMaWmFDlU8ahgyw8oZWjSg5zdorzb4Jb2Y7tyi1T0q54M2n09zUXIt24zM/Lvnuczyrj5V6sqst+xcIrYv8Aneclqb83rk1z+w+h6PS06WzFqnq+c9csQwNoAAAAAAAAAAAAAAAAAAAAAA0WeOI0KFl8ztySb90i12i30r01T1R9eH5UHpFemnTRRH91UeUcfrhqcysKm9J7lfnuLTcrs29PMRznh+VDsmni9rImeVMZ8er8+CZnLO9APU7a1t4kxOOMExnhLc4POevTSUtGov41r/1Jq/O5Y2t0v0RiePxU2o2LSXZzETTPdy8vxhk1c76rXZp04vj2n+plq3i7McKYYKPRzTxPtVTPlH2aTGY2pWelUk5PdfYvBLUiuvX7l6c1zlc6fS2tPT0bVOI/ecscws4AAAAAAAAAAAAAAAAAAAGbgMk16/7GlOa+pRtH/U9XqZ7enu3Pcpa9/V2LH/criPr5c0gwmYGJlrqSp01w0nKXklb1N2jars+9MQqrvpBpqfciZ+X75NpQ6OY/iYiT/JTUfds2adop/uqaVfpJV/ZbjxnP2ho8+eiiWIowWCrXqxbvHEStFxa+VwhqatvWu+439LpKNPno54qjX7jc1nR6cRHRzyz1/GZUZi9FNSjCp9uqJSeioww872te7lKcO9akt209arT0aimIqzweNBrbmjrqqoiJz25+0wkNbo5p/JiJp/xQjL2cSvq2ijqqlcUekdz+63HhMx+WsxXR7iI/s6lOfc7wflrXqa9e03I92Ylu2vSGxV79Mx8/x9GhyhkHE0LurRmor50tKPi5RulzNK7pL1v3qVpY1+mv8KK4z2cp8pa01m2AAAAAAAAAAAAAAAAJFkLM+viUpv7qk9k5p3a4xhv8XYsNPt1y7HSnhCp1u8WNNPRj2quyOr4z/wApbhcwMLFduVSb75qK5KKXuWdG12Y55lRXPSDU1T7MRHhn6q62YWEkrR6yD4xqX/qTJq2yxMcMw80b/q6Z44nw/GEbyzmJWpJzoS66K+S1qiXctkuWvuNC/tddHG3Ofqt9Jv1m7PRux0Z+X8fvFg5EzRxGJ7TXVU/3lRNN/lhtfou8w6fb7t3jPCO9tazd9Pp+ET0quyPvP/Kd5JzPwtCzcOtn9dW0vKOxeV+8ubOgs2+rM97mNVvGpv8ACJ6MdkcPnzb9I3VU9AAAAAAAA02Vs2MNiLudNRm/xKfZl4u2p80zVvaOzd96OPcsNNump0/CmrMdk8Y/fgg2XMya9C86X31NfSrTS747+XkU2o2y5b40cY+bptHvdi97Nz2avl5/nzUZDzLr4hKc/uab2OavNrioavWw0+23LkZq4R806ze7FiejR7VXdy8/wlWGzBwsV23Um+LnbyUUiyp2uxHPMqS56QaqqfZxHh+XtfMHCSXZ6yD4xqX/AKkxVtdieWYRRv8AqqZ44nw/GEZy1mNXopzovroLXZK1RL8vzctfcV9/bLlEZo4x81zpN9s3p6Nz2Z+Xn1ePmihVrwAAAAAAAAmuYebSq2xVeN6af3cHsk09c2t6T1JcfAuNu0cVf1a44dTnd63Obf8AQtTx657O50YvXIgAAAAAAAAAAAAAAAAAAAAAEJz8zaUoyxdGNpx11IpfFHfO3Fb+KKncdHFVPraI4xz73SbLuc01Rp7s8J5d09nwlzooHWAAAAAAXcJh3UnTpx2zlGK8ZNK/qe7dE11xTHXLxduRboqrnlETPk7hhKEacIU4K0YRUUu5KyOwppimmKY5Q+a3LlVyua6uczlePTwAAAAAAAAAAAAAAAAAAAAAAeSXHYE8nFc4MD9nxFaivhjLs/lktKK8mlyOS1Vr1V2ql9E0Oo9fp6Lk85jj8Y4S15rtsAAAAG2zUS+2Ya/1+qi2vWxuaCInUU5V+6zMaO5jsdghI6p8/XEyAbAAegYuUso0sPTlWr1I06cds5Oy7kuLfBayJnHN7ooqrnFMZlCK/Sth9K1LDV6kP3loQTXGKlK/mkYKtTRCyo2i/VGeCRZtZ3YbHXjScoVUruhVSjO31Kzaku9N99jJRcpr5NTU6O7p59uG/MjVAAAAAA1WcGcOHwUFOvOzl8NKK0pza26MV7uyW9nmuummMyz2NPcvVdGiMolHpXo37WExCh9S6pvxcVP9TBGqolYVbNfiM8ExyHlyhjKfW4aopx2Na1KL+mcXri/E2IqieSsu2q7c4qhsSWMA8AXAplIDlnSDb7Y7b6cL+Ote1jnd1iPX+EO22CZnR+Mo0Vi6AAAABkZPxPVVaVX6JxlyTu/Qy2Lnq7lNXZLDqLXrrVVvtiYdhoYhSSad01dPuew7HnGYfNJiaZxPNlRqAyuJhKpMgVAcOz3yzLHYyor/AOHoSlTpQ3OUXapVa3ttNLuS7ys1l/HB1e06KKaOnMcZ/f3va6NFJFLVemZdDFEJDlPN14SnDFUarVelKMr2VtK9uzbdrs09qbW836elZxVEqanUU6uqbNdPCcup5EygsTQo10rdZFSceEtko8ndci8oriumKo63JX7U2blVueqWcemEAAAKK1VQjKcnaMU23wSV2wmImZxDhGVMdPF16mJqbZvsxfy018FNeC9W3vOd1Wqmqrg77Q6OnT2oojn1/FfyNklYiqqbeirNtrbZbkYLM1V1Yyy6u7Fi108ZXcVpZHxlPEUZOULJ1Ib50nJqcJJam1a6fHmWli7NFXRlTXrcayxNWMTH7n8u10qilGM4u8ZJNNbGmrplq5WYxOFTCHjYFqUyULNSqThGXJc5sYq2JrTWuN9FPuglG/o3zOT11z1l+qY/cPoe12Js6SimeeM+fFqzUb4AAAAAEyzQy1eKw83aUfgb3x+nxXt4HRbZrIrp9VXzjl3w4/fdumiudTbjhPPunt+E/X4pjg695Jf82FtMOchskzy9KkwlTXm1GTW1RbXikQmOb55yNG9OD2tq/N62c1ra/afRNLTFNuG3jh3vKya2ebkLmMxdWUY05zk4LZFvVq2ePMzeuqqjEyx27NqKprppxMuk9G//AGMFuU6tudRv3bOm0E5sR4uN3uMayr4R9ISg3FSAAAGozubWCxdt9GouTi0/RmK/OLVU90tzQRE6q3E/5R9XGqNO+pHI11db6FwiGXRjKDU4S0ZLY0zHTdmmcwxVzTXHRqjMMPK9SdTSlVblJq13wtsRuWLszXEzLzNqim30aIxDr+YtVyydgXLb1FNX8IpJ+SOpo92Hz/Uxi9V8Zbts9MClskYOOraLXeiYh5lFs6Mu9VB04P72asrfKntk/wBDQ3DVxZo6NPvT8u9cbPt06m56yuPYp+c9n5QA5d3QAAAAAAD2LtZrU1rTW2/EmJmJzCJiJjEpvmZl6dWrGjVSctGTVXY9S2SW/wAS/wBBr67tXq6/NyW77TasUTftcIzy+PZ+E5jItnOK0wKrhLieMyW8FiauHmrRTlKlJ7JUpSvCSfdfRfBrvRzW6Waqa89Uu52zUxf08Y5xzXCnbyipFy0YRTlOTSUUrtt7EkZbVE1VYh6iYpiaquEQ67m3k77NhqNF/FFXlb6pNyl6trkdhprXqrUUOC1+o/6jUVXI5Ty+EcIbMztMAAALGOwyq06lKXwzhKD8JRafuea6elTNM9bJauTbuU1xziYnycYq4SVCpOjVVqkXbx4Ndz2o47U2qrdfRq6n0Ki7Tftxco4xL01ksXEYedeUKFBaVap2Yrcr7ZS4KKu2zf0Fmqu5EQw6q/TYs1V1u1ZNwcaFGjQh8NKEaa8IRST9DrYjEYcBXXNVU1T1shsl4UNgRLPfLUqDpwhFacoyem/lSaWzeV+v1tWniKaY4z8l1tG2UavNdyeFM8u3xc8q1XOTlJtyetye1nN111V1TVVOZdpbt026YoojEQoPL2AAAAAAAAbXNfE9XiqEnsctF/zpx92jc0FfQ1FM+Hmr91tes0dyI7M+XF1dSOrfPVakQK1IJY2U8mUcTFQr01OK1q904u1rxktcXbemeK7dNcdGqMwy2b9yzV0rc4lpP+hcLfU6qXBVFb1jc0atr08znj5rWN+1eMTifD8S22Ssg4fDPSpU0p/vJNylyb2crGxZ0lqz7kNPU7hqNRGLlXDs5R+/FtLmw0ntwFwFwFwFwMDKmSKGJSVempW2S1qS8JLXyMV3T27sYrjLZ02svaec2qsfTyaOWYuFb+Krbh1kbeHw3NP/AErT5zx81j/r2qx1eX8ttknImHwt+opqMpapVG3KbW2zk9du7YbtqzRajFEYVuo1d7UTm7Vn97GwcjK1lDkBQ5Eoc1z+xOnitFfhwjHm7yfo0c5uteb3R7Idt6P2uhpelP8AdMz9vsjZVrwAAAAAAAAAep21rU9zXHiTE4nMExE8JdYyNlFV6NOrva7S4SWqS87nYae7F23Fcdf163zbW6adNfqtT1Tw+HU2EZmZqq1IJVqRAqUglEek/OytkzCwxFCkqjlVVOTlfRgnGTUnbi423bQOQ1umzKcr6KoRXdSk35uROTDEqdL2VX+NBeFFfqMmFh9KmVv82/8A1U/7DJh4ulPK/wDnH4ulT/8AkZML9Ppdyqvx4vxpR/QZMMql01ZUjt6iXjRf6SIyYdO6J8/MRlX7T19GMFRULVKd7OU9Ls2e+0bgdBcgKXIClyJQocgLGJxMYRlOTtGKcm+5K5FVUU0zVPKHq3bquVxRTzmcORY3EurUqVZbZycvC71LktXI429cm5XNc9cvpdizFm1Tbp5REQsGNlAAAAAAAAAACQZo5W6mbpTf3dR6nujPYnz1LyLXa9VFuv1dXKflKh33b5v2/W0R7VPzj+OfmnsKp0mHEr0apGBcVQhKtTAwsu5Lp4zD1sLXV6dWLi2rXi9sZxvvjJKS70MJiXyvnLm9VwGJqYWuu3HXGaXZqQfw1YcU/RpramQmWuUCUZVaARk0AZUuATleyfk6piKtOhQg51qklGEIrW2/ZJXbexJNkJh9R5jZtQyZhKeFi1KeudWqvnqy+JruVlFd0UCZb5zJQpcwhRKoSLUqwwhDM9csX/w0HwdRrzUP1fIpN11X/hp8fw6r0f0H/s1x/wDP3n7R4oiUTqgAAAAAAAAAAAAJfm1l7SSo1n2tkJv5uEW+Pv47eh27cIqiLVyePVPb3fFyG87RNEzfsxw647O+O7t7Phyk6mXLmVcapCVyNYYFxViMDUZ05u4bKVLqcTHXG7p1oWVSk3tcG9zsrxepkYTEuJ5x9GOOwjcqcHiqC2VsPFykl/HRV5x5aS7wY7ERlDRbjLVJbYy1NeKZ6w85eWWy+vgMIykub/R9jsa04UXSo78RiE6cLcYprSn/ACp+KIe4h2nMrMzDZLg3T+8xMlapipxtJrfCnH5I33a297dkRhOUldYnDyodYYFEqxOBbdQDRZw5dVFOEHes/wDYuL7+CK7Xa6LEdGn3voutp2mrVVesucKI/wB3dHd2z4fCCyk2227t623tbe1s5iZmZzLuYiIjEcnhCQAAAAAAAAAAAAAEkyLnK4Wp17yjuqbZL83Hx2+JdaPdJp9i7y7XN7lsNNyZuafhPZ1T8Oz6fBLaNSM4qUJKUXskndF9RXTXHSpnMOSuWq7dU01xiY7VZ6eDSCHumBVGq1rT18UEvK8lU/aRhP8A8lOM/wCpMjEGZU0FCnrp06cHxhShF+aQxBmVydZvW22+9gU6ZI80gh5cDyTsm27JbW3ZIiZiIzL1TTNU4iOKMZZznSvDDu72OrbUvyrf4+5S6vdYj2bPn+HTbdsEzi5qeX+P5/H0RSUm223dvW23dt8WUMzMzmXWU0xTGI5PCEgAAAAAAAAAAAAAAADKwGUKlB6VKbjxW2L8U9TM9nUXLM5olranSWdTT0btOfrHilGT874OyrwcX9cNcecdq5XLmxu9M8LkY+H7+XN6r0drjjYqz3Twnz5fRIcJiKdZXpVIz7oy181tRaW79u5HsTlRXtHeszi5TMfvavOiZctfovOqGTovOqGUdE6oZOidUMnReqiMp6KjEThTWlUnGC4ykl7niu7RRGapwy2tPcuziimZ+DQ4/OylC6oxdSX1Psx9db8itvbtbp4URmfku9N6PXq+N2ejHnP4+fgi2UcrVa/7SXZ3U46orlv53KW/rLt/3p4dnU6XSbfY0sf06ePbPGf34YYJqt0AAAAAAAAAAAAAAAAAAAAB6nbWtvFExMxyJjPCWxw2X8TT+GvO3CT01/uubNGtv0cqp+v1aV3btLc963Hhw+mGypZ6YhfFGnLxg0/Rm1Tu16OcQ0q9h0s8sx4/mGTHPmpvoQ5Skv7mSN4r66YYZ9HrXVXPyHnzPdQhznJkzvFX+KI9HrXXXPlDHq564h/DClH+WT95GOrdr08ohmp2DTRzmZ8Y/DX4nOPFVL3rSS4QtD1ik/U1q9fqK+dXlwblva9Jb5UR48fq1lSbk7ybb4t3fmzVqqmqczLeppimMRGIUnlIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z" alt="Reddit" class="social-icon"> Reddit</a>
+        </div>
+        
+    </div>
+</footer>
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

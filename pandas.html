@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pandas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="home-button">🏠</a>
+        <div class="toggle-button" id="toggleButton">🌙</div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#section1">Introduction</a>
+            <a href="#section2">Reading and Writing Data</a>
+            <a href="#section3">Selecting Data Subsets</a>
+            <a href="#section4">creating plots in pandas</a>
+            <a href="#">Section 5</a>
+            <a href="#">Section 6</a>
+            <a href="#">Section 7</a>
+            <a href="#">Section 8</a>
+            <a href="#">Section 9</a>
+            <a href="#">Section 10</a>
+        </div>
+        <span class="openbtn" onclick="openNav()">☰</span>
+    </div>
+
+
+    <section id="section1">
+    
+       
+        <h2>Introduction to Pandas :</h2>
+        <p>Pandas is a powerful open-source data analysis and manipulation tool built on top of the Python programming language. It provides data structures and functions needed to work with structured data seamlessly and efficiently.</p>
+        
+        <h3>Why Use Pandas?</h3>
+        <ul>
+            <li>Easy handling of missing data.</li>
+            <li>Size mutability: columns can be inserted and deleted from DataFrames.</li>
+            <li>Automatic and explicit data alignment.</li>
+            <li>Powerful, flexible group by functionality for performing split-apply-combine operations on datasets.</li>
+        </ul>
+        
+        <h3>Getting Started :</h3>
+        <p>To start using Pandas, you'll need to install it first:</p>
+        <pre><code>pip install pandas</code></pre>
+        
+
+        <section id="sectionimg">
+            <h3>Pandas DataFrame Table</h3>
+            <img src="https://pandas.pydata.org/docs/_images/01_table_dataframe.svg" alt="Pandas df table" width="500" height="400" style=" background-color: rgba(221, 221, 221, 0.8); display: block; margin: 20px auto;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 15px; ">
+            <p>This image represents a Pandas DataFrame table structure, showcasing how data is organized in rows and columns. A crucial tool for data analysis!</p>
+            <p>A DataFrame is a 2-dimensional data structure that can store data of different types (including characters, integers, floating point values, categorical data and more) in columns. It is similar to a spreadsheet, a SQL table or the data.frame in R.</p>
+        </section>
+        
+
+
+        <h3>Basic Example :</h3>
+        <p>Here's a quick example to show how Pandas works:</p>
+        <pre><code>import pandas as pd
+
+        
+        
+    
+    # Creating a DataFrame
+    data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [24, 27, 22]}
+    df = pd.DataFrame(data)
+    
+    print(df)</code></pre>
+    </section>
+
+    <section id="section2">
+        <h2>Reading and Writing Data</h2>
+        <p>Let's explore some fundamental operations you can perform with Pandas.</p>
+        
+        <h3>How to read and write tabular data? :</h3>
+        <section id="sectionimg">
+            
+            <img src="https://pandas.pydata.org/docs/_images/02_io_readwrite.svg" alt="read and write tabular data" width="500" height="200" style=" background-color: rgba(221, 221, 221, 0.8); display: block; margin: 20px auto;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 15px; ">
+            <p>The image above represents the various methods Pandas offers to read from and write to different file formats. This functionality is essential for data manipulation and analysis. Whether you’re dealing with CSV, Excel, JSON, or SQL databases, Pandas provides straightforward functions to import and export data seamlessly.
+
+                Using these methods, you can efficiently bring data into your workspace and export your analysis results, making Pandas an incredibly versatile tool for data scientists and analysts. 📊</p>
+        </section>
+        <p>pandas provides the read_csv() function to read data stored as a csv file into a pandas DataFrame. pandas supports many different file formats or data sources out of the box (csv, excel, sql, json, parquet, …), each of them with the prefix read_*.:</p>
+        <pre><code>import pandas as pd
+    
+    # Reading a CSV file
+    df = pd.read_csv('filename.csv')
+    
+    print(df.head())  # Display the first 5 rows</code></pre>
+        
+        <h3>Data Inspection :</h3>
+        <p>It’s essential to understand your data. Pandas provides several methods to inspect the data:</p>
+        <pre><code># Display the first few rows
+    print(df.head())
+    
+    # Display summary statistics
+    print(df.describe())
+    
+    # Display information about the DataFrame
+    print(df.info())</code></pre>
+        
+        <h3>Filtering Data :</h3>
+        <p>You can filter data based on certain conditions:</p>
+        <pre><code># Filter rows where age is greater than 25
+    filtered_df = df[df['Age'] > 25]
+    
+    print(filtered_df)</code></pre>
+    </section>
+
+    <section id="section3">
+        <h2>Selecting Data Subsets</h2>
+        <section id="sectionimg">
+            
+            <img src="https://pandas.pydata.org/docs/_images/03_subset_columns.svg" alt="read and write tabular data" width="500" height="300" style=" background-color: rgba(221, 221, 221, 0.8); display: block; margin: 40px auto;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 15px; ">
+            <p>The image shows selecting specific columns from a Pandas DataFrame, making data extraction easy and efficient. 📊</p>
+        </section>
+        
+        
+        <h3>Selecting Specific Columns:</h3>
+<p>You can select any columns. For example, to select the 'Age' column:</p>
+<pre><code>import pandas as pd
+
+# Example DataFrame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+df = pd.DataFrame(data)
+
+# Select the 'Age' column
+age_column = df['Age']
+print(age_column)</code></pre>
+
+        
+<h3>Selecting Specific Rows and Columns:</h3>
+<section id="sectionimg">
+            
+    <img src="https://pandas.pydata.org/docs/_images/03_subset_columns_rows.svg" alt="Selecting Specific Rows and Columns" width="500" height="300" style=" background-color: rgba(221, 221, 221, 0.8); display: block; margin: 40px auto;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 15px; ">
+    
+</section>
+<p>We can select specific rows and columns from a DataFrame. For example:</p>
+<pre><code>import pandas as pd
+
+# Example DataFrame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+df = pd.DataFrame(data)
+
+# Select specific rows and columns (e.g., rows 0 and 2, and columns 'Name' and 'Age')
+selected_data = df.loc[[0, 2], ['Name', 'Age']]
+print(selected_data)</code></pre>
+
+        
+        <h3>filtering specific rows from a DataFrame :</h3>
+        <section id="sectionimg">
+            
+            <img src="https://pandas.pydata.org/docs/_images/03_subset_rows.svg" alt="filtering specific rows" width="500" height="300" style=" background-color: rgba(221, 221, 221, 0.8); display: block; margin: 40px auto;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 15px; ">
+            
+        </section>
+<p>You can filter rows in a DataFrame based on specific conditions. For example, to select rows where the age is greater than 30:</p>
+<pre><code>import pandas as pd
+
+# Example DataFrame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+df = pd.DataFrame(data)
+
+# Filter rows where Age is greater than 30
+filtered_data = df[df['Age'] > 30]
+print(filtered_data)</code></pre>
+
+        
+    </section>
+    
+    <section id="section4">
+        <h2>creating plots in pandas</h2>
+        <section id="sectionimg">
+            
+            <img src="https://pandas.pydata.org/docs/_images/04_plot_overview.svg" alt="filtering specific rows" width="700" height="400" style=" background-color: rgba(221, 221, 221, 0.8); display: block; margin: 40px auto;  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); border-radius: 15px; ">
+            
+        </section>
+<p>Pandas provides a convenient way to create plots using the built-in plotting functions. You can visualize your data quickly with just a few lines of code. For example, to create a simple line plot:</p>
+<pre><code>import pandas as pd
+import matplotlib.pyplot as plt
+
+# Example DataFrame
+data = {
+    'Year': [2020, 2021, 2022, 2023],
+    'Sales': [150, 200, 250, 300]
+}
+df = pd.DataFrame(data)
+
+# Create a line plot
+df.plot(x='Year', y='Sales', kind='line', marker='o')
+plt.title('Sales Over Years')
+plt.xlabel('Year')
+plt.ylabel('Sales')
+plt.grid()
+plt.show()</code></pre>
+
+       <h4> ❗We are using Air Quality data set for this . </h4>
+    </section>
+    
+    
+    <script src="pandas.js"></script>
+</body>
+</html>
